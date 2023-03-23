@@ -2,7 +2,9 @@ import logging
 import os
 from datetime import datetime
 
-Log_file= f"{datetime.now().strftime("%m_%d_%Y_%H_%M_%S")}.log"
+Log_file= f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
+
+
 
 logs_path = os.path.join(os.getcwd(),"logs",Log_file)
 os.makedirs(logs_path , exist_ok=True)
@@ -16,3 +18,7 @@ logging.basicConfig(
 
 
 )
+
+
+if __name__=='__main__':
+    logging.info("Checking logging")
