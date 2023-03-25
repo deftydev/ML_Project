@@ -1,8 +1,25 @@
+certifi @ file:///C:/b/abs_85o_6fm0se/croot/certifi_1671487778835/work/certifi
 click==7.1.2
+colorama==0.4.6
+dataclasses==0.6
 Flask==1.1.2
 gunicorn==20.0.4
+importlib-metadata==6.0.0
 itsdangerous==1.1.0
 Jinja2==2.11.3
+joblib==1.2.0
 MarkupSafe==1.1.1
+-e git+https://github.com/deftydev/ML_Project.git@665548fd06786a3eb12fda3a3522c1ced447d017#egg=ML_Project
+numpy==1.21.6
+pandas==1.1.5
+python-dateutil==2.8.2
+pytz==2022.7.1
+scikit-learn==1.0.2
+scipy==1.7.3
+six==1.16.0
+sklearn==0.0.post1
+threadpoolctl==3.1.0
+typing_extensions==4.5.0
 Werkzeug==1.0.1
--e .
+wincertstore==0.2
+zipp==3.15.0
