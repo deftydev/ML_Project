@@ -16,11 +16,11 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    Data_transform_path = os.path.join('artifacts',"preprocessing.pkl")
+    preprocessor_obj_file_path = os.path.join('artifacts',"preprocessing.pkl")
 
-class DataTransform:
+class DataTransformation:
     def __init__(self):
-        self.DataTransformConfig = DataTransformationConfig()
+        self.data_transformation_config = DataTransformationConfig()
 
     def get_data_transformer_object(self):
         try:
@@ -65,7 +65,7 @@ class DataTransform:
             raise CustomException(e,sys)
         
 
-    def initiate_data_transform(self,train_path,test_path):
+    def initiate_data_transformation(self,train_path,test_path):
 
         try:
             train_df=pd.read_csv(train_path)
